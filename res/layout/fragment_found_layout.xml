@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/wangyibg">
+    
+    <include
+        android:id="@+id/include_header_layout"
+        layout="@layout/header_empty_layout" />
+    
+    <LinearLayout
+        android:id="@+id/found_top_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/include_header_layout"
+        
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <ImageView 
+            android:id="@+id/search_btn"
+            android:layout_width="30dp"
+            android:layout_height="37dp"
+            android:src="@drawable/icon_search"
+            android:layout_marginRight="8dp"
+            android:paddingTop="7dp"
+            android:layout_gravity="right"
+            android:scaleType="fitXY">
+            
+        </ImageView>
+
+        
+    </LinearLayout>
+  
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_header_layout"
+        android:scrollbars="none" >
+
+        <org.demo.cn.widget.MyGridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0.0dip"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.0dip" />
+    </ScrollView>
+
+</RelativeLayout>

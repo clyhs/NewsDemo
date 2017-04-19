@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.demo.cn.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_header_layout"
+        layout="@layout/header_back_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/include_header_layout"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="12dp"
+            android:text="@string/reg_title"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    
+
+</org.demo.cn.widget.SquareLayout>

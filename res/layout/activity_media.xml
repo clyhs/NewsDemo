@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/media_relate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            layout="@layout/media_header_view"
+            android:fitsSystemWindows="true" >
+        </include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/media_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <me.maxwin.view.XListView
+            android:id="@+id/media_comment_xlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </me.maxwin.view.XListView>
+    </RelativeLayout>
+
+</LinearLayout>

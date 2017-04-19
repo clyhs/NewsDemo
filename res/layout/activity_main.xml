@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#77557799" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border" >
+
+        <RadioGroup
+            android:id="@+id/bottom_tabrg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp" >
+
+            <RadioButton
+                android:id="@+id/tab_news"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_news_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="新闻"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/tab_media"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_media_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="媒体"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/tab_found"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_found_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="发现"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/tab_account"
+                android:layout_width="0dp"
+                
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                
+                android:button="@null"
+                android:drawableTop="@drawable/tab_account_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="我"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
